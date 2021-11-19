@@ -7,37 +7,37 @@ import Autocares.data.Entities.Usuario;
 public class UsuarioDAO implements DAO<Usuario,Long>{
 
 	@Override
-	public void insert(Usuario a) {
+	public void insertar(Usuario a) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public boolean update(Usuario a) {
+	public boolean actualizar(Usuario a) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public List<Usuario> getAll(Usuario a) {
+	public List<Usuario> obtenerTodos(Usuario a) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Usuario getOne(Long b) {
+	public Usuario obtenerUno(Long b) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public boolean deleteByObject(Usuario a) {
+	public boolean borrar(Usuario a) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean deleteByID(Long b) {
+	public boolean borrarPorID(Long b) {
 		// TODO Auto-generated method stub
 		return false;
 	}

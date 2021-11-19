@@ -3,10 +3,10 @@ package Autocares.data.DAO;
 import java.util.List;
 
 public interface DAO<T,K>{
-	public void insert(T a);
-	public boolean update(T a);
-	public List<T> getAll(T a);
-	public T getOne(K b);
-	public boolean deleteByObject(T a);
-	public boolean deleteByID(K b);
+	public void insertar(T a);
+	public boolean actualizar(T a);
+	public List<T> obtenerTodos(T a);
+	public T obtenerUno(K b);
+	public boolean borrar(T a);
+	public boolean borrarPorID(K b);
 }
