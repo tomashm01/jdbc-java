@@ -16,10 +16,10 @@ public class Transaccion {
 		try (Connection connection = DriverManager.getConnection(url, user, passwd)) {
 			connection.setAutoCommit(false);
 			Statement statement = connection.createStatement();
-			statement.executeUpdate("insert into alumnos(id,nombre,notaMedia,curso) values(null,\"Juan\",25,1)");
-			statement.executeUpdate("insert into alumnos(id,nombre,notaMedia,curso) values(null,\"Pepe\",56,2)");
-			statement.executeUpdate("insert into alumnos(id,nombre,notaMedia,curso) values(null,\"Pedro\",35,3)");
-			statement.executeUpdate("insert into alumnos(id,nombre,notaMedia,curso) values(null,\"Sergio\",18,2)");
+			statement.executeUpdate("insert into alumnos(id,nombre,notaMedia,curso) values(null,\"Juan\",7,1)");
+			statement.executeUpdate("insert into alumnos(id,nombre,notaMedia,curso) values(null,\"Pepe\",5,2)");
+			statement.executeUpdate("insert into alumnos(id,nombre,notaMedia,curso) values(null,\"Pedro\",6,3)");
+			statement.executeUpdate("insert into alumnos(id,nombre,notaMedia,curso) values(null,\"Sergio\",9,2)");
 			connection.commit();
 		} catch (SQLException e) {
 			System.out.println("Excepcion SQL: " + e.getMessage());

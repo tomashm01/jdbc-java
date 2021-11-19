@@ -19,9 +19,7 @@ public class Reverso {
 			String query = "SELECT * FROM alumnos;";
 
 			ResultSet resultSet = statement.executeQuery(query);
-			resultSet.last();
-			System.out.println(resultSet.getInt("id") + "." + resultSet.getString("nombre") + ", nota media  "
-					+ resultSet.getFloat("notaMedia")+" en curso "+resultSet.getInt("curso"));
+			resultSet.afterLast();
 			while (resultSet.previous()) {
 				System.out.println(resultSet.getInt("id") + "." + resultSet.getString("nombre") + ", nota media  "
 						+ resultSet.getFloat("notaMedia")+" en curso "+resultSet.getInt("curso"));

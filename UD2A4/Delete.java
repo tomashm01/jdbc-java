@@ -4,7 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-
+/**
+ * Implementa la clase Delete que elimine los alumnos de un curso determinado
+ * @author Tomás
+ */
 public class Delete {
 
 	public static void main(String[] args) {

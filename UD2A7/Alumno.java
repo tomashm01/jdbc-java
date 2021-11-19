@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -33,7 +32,7 @@ public class Alumno {
 			String fechaNacim;
 			float notaMedia;
 			int id;
-
+			
 			do {
 				System.out.println("---MENU---");
 				System.out.println("1.Insertar datos");
