@@ -4,26 +4,26 @@ import java.util.List;
 
 public class Autocar {
 	
-	private Long matricula;
+	private String matricula;
 	private Conductor conductor;
 	private List<Usuario> listaUsuarios;
 	private int numAsientos;
 	
-	public Autocar(Long matricula,Conductor conductor,Usuario user) {
+	public Autocar(String matricula,Conductor conductor,Usuario user) {
 		setMatricula(matricula);
 		setConductor(conductor);
-		setListaUsuarios(user);
+		addUsuario(user);
 	}
 	
-	public boolean validarMatricula(Long matricula) {
+	public boolean validarMatricula(String matricula) {
 		return true;
 	}
 	
-	public Long getMatricula() {
+	public String getMatricula() {
 		return matricula;
 	}
 	
-	public void setMatricula(Long matricula) {
+	public void setMatricula(String matricula) {
 		if(validarMatricula(matricula)) {
 			this.matricula=matricula;
 		}else {
@@ -43,7 +43,7 @@ public class Autocar {
 		return listaUsuarios;
 	}
 	
-	public void setListaUsuarios(Usuario user) {
+	public void addUsuario(Usuario user) {
 		int numAsientosActualizado=getNumAsientos() + 1 ;
 		listaUsuarios.add(user);
 		setNumAsientos(numAsientosActualizado);

@@ -2,7 +2,7 @@ package Autocares.data.Entities;
 
 public class Conductor extends Usuario {
 
-	private Long matriculaAutocar;
+	private String matriculaAutocar;
 	private String tipoJornada;
 	
 	public Conductor(String dni, String nombreCompleto,int edad,String tipoJornada) {
@@ -10,11 +10,11 @@ public class Conductor extends Usuario {
 		setTipoJornada(tipoJornada);
 	}
 
-	public Long getMatriculaAutocar() {
+	public String getMatriculaAutocar() {
 		return matriculaAutocar;
 	}
 
-	public void setMatriculaAutocar(Long matriculaAutocar) {
+	public void setMatriculaAutocar(String matriculaAutocar) {
 		this.matriculaAutocar = matriculaAutocar;
 	}
 

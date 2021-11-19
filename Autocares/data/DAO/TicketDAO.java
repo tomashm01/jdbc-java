@@ -4,7 +4,7 @@ import java.util.List;
 
 import Autocares.data.Entities.Ticket;
 
-public class TicketDAO implements DAO<Ticket,Long> {
+public class TicketDAO implements DAO<Ticket,String> {
 
 	@Override
 	public void insertar(Ticket a) {
@@ -25,7 +25,7 @@ public class TicketDAO implements DAO<Ticket,Long> {
 	}
 
 	@Override
-	public Ticket obtenerUno(Long b) {
+	public Ticket obtenerUno(String b) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -37,9 +37,11 @@ public class TicketDAO implements DAO<Ticket,Long> {
 	}
 
 	@Override
-	public boolean borrarPorID(Long b) {
+	public boolean borrarPorID(String b) {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+
 
 }

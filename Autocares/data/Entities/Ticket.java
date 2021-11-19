@@ -6,10 +6,10 @@ public class Ticket {
 	
 	private Date fechaSalida;
 	private Date fechaLlegada;
-	private Long id;
+	private int id;
 	private Usuario usuarioPropietario;
 	
-	public Ticket(Long id,Date salida,Date llegada,Usuario propietario) {
+	public Ticket(int id,Date salida,Date llegada,Usuario propietario) {
 		setId(id);
 		setFechaSalida(salida);
 		setFechaLlegada(llegada);
@@ -32,11 +32,11 @@ public class Ticket {
 		this.fechaLlegada = fechaLlegada;
 	}
 	
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 	
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

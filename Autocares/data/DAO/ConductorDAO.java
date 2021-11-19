@@ -4,7 +4,7 @@ import java.util.List;
 
 import Autocares.data.Entities.Conductor;
 
-public class ConductorDAO implements DAO<Conductor,Long>{
+public class ConductorDAO implements DAO<Conductor,String>{
 
 	@Override
 	public void insertar(Conductor a) {
@@ -25,7 +25,7 @@ public class ConductorDAO implements DAO<Conductor,Long>{
 	}
 
 	@Override
-	public Conductor obtenerUno(Long b) {
+	public Conductor obtenerUno(String b) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -37,10 +37,9 @@ public class ConductorDAO implements DAO<Conductor,Long>{
 	}
 
 	@Override
-	public boolean borrarPorID(Long b) {
+	public boolean borrarPorID(String b) {
 		// TODO Auto-generated method stub
 		return false;
 	}
-
 
 }

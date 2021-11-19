@@ -4,7 +4,7 @@ import java.util.List;
 
 import Autocares.data.Entities.Autocar;
 
-public class AutocarDAO implements DAO<Autocar,Long>{
+public class AutocarDAO implements DAO<Autocar,String>{
 
 	@Override
 	public void insertar(Autocar a) {
@@ -25,7 +25,7 @@ public class AutocarDAO implements DAO<Autocar,Long>{
 	}
 
 	@Override
-	public Autocar obtenerUno(Long b) {
+	public Autocar obtenerUno(String b) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -37,9 +37,10 @@ public class AutocarDAO implements DAO<Autocar,Long>{
 	}
 
 	@Override
-	public boolean borrarPorID(Long b) {
+	public boolean borrarPorID(String b) {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
 
 }

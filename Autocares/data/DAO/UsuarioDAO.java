@@ -4,7 +4,7 @@ import java.util.List;
 
 import Autocares.data.Entities.Usuario;
 
-public class UsuarioDAO implements DAO<Usuario,Long>{
+public class UsuarioDAO implements DAO<Usuario,String>{
 
 	@Override
 	public void insertar(Usuario a) {
@@ -25,7 +25,7 @@ public class UsuarioDAO implements DAO<Usuario,Long>{
 	}
 
 	@Override
-	public Usuario obtenerUno(Long b) {
+	public Usuario obtenerUno(String b) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -37,9 +37,11 @@ public class UsuarioDAO implements DAO<Usuario,Long>{
 	}
 
 	@Override
-	public boolean borrarPorID(Long b) {
+	public boolean borrarPorID(String b) {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+	
 
 }
